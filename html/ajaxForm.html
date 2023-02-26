@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> JavaScript Ajax Post Demo</title>
+        
+        <script type="text/javascript" src="../JS/ajaxFile.js"></script>        
+    </head>
+    <body>
+        <form id="myForm" > 
+            <!-- method="POST" action="../phpData/action_page.php"> -->
+            <label>Fist Name:</label>
+            <div><input type="text" name="fName"></div> <br>
+            <label>Last Name:</label>
+            <div><input type="text" name="lName"></div> <br>
+            <label>User Name:</label>
+            <div><input type="text" name="userName"></div> <br>
+            <label>password:</label>
+            <div><input type="text" name="PW"></div> <br>
+            <label>Confirm Password:</label>
+            <div><input type="text" name="confirmPW"></div> <br>
+            <label>Email:</label>
+            <div><input type="text" name="email"></div> <br>
+            <label>Phone:</label>
+            <div><input type="text" name="phone"></div> <br>
+            <label>Comment:</label>
+            <div><textarea name="comment"></textarea></div>
+            <p><button type="button" onclick="postComment()">Post Comment</button> </p>
+        </form>
+        <div id="result">
+            <p>Content of the result DIV box will be replace by the server response</p>
+        </div>
+    </body>
+</html>

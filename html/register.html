@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html charset="UTF-8">
+    <head>
+        <title>Registration Form and validation</title>
+        <link rel="stylesheet" href="/css/confirmReg.css" rype="text/css">
+        <script src="/JS/formValidate.js"> </script>
+
+    </head>
+    <body>
+        <form name="contactForm" onsubmit="return validateForm()" action="phpData/confirmReg.php" method="post">
+             <h2> Registation Form</h2>
+             <div class="row">
+                <label>Full Name</label>
+                <input type="text" name="name"> 
+                <div class="error" id="nameErr"></div>               
+             </div>
+             <!--  Email -->
+             <div class="row">
+                <label>Email *</label>
+                <!-- <input type="text" name="email"> -->
+                <input type="email" id="email" class="form-input" placeholder="enter your email" required="required">
+                <div class="error" id="emailErr"></div>   
+             </div>
+             <!-- Parssword and Confirm password -->
+             <div class="row">
+                <label for="password" class="label-title">Password *</label>
+                <input type="password" id="password" class="form-input" placeholder="enter your password" required="required">
+             </div>
+             <div class="row">
+                <label>Mobile number</label>
+                <input type="text" name="mobile" maxlength="10">
+                <div class="error" id="mobileErr"></div>
+             </div>
+             <div class="row">
+                <label> Country</label>
+                    <select name="country">
+                    <option>Select</option>
+                    <option>United States</option>
+                    <option>United Kingdom</option>
+                    <option>Australia</option>
+                    <option>Canada</option>
+                    <option>New Zeland</option>
+                    <option>South Africa</option>
+                    <option>India</option>
+                    <option>Nigeria</option>
+                    <option>Gana</option>
+                    <option>Pakistan</option>
+                </select>
+                <div class="error" id="countryErr"></div>
+             </div>
+            <div class="row">
+                <label>Gender</label>
+                <div class="form-inline">
+                    <label><input type="radio" name="gender" value="male">Male </label>
+                    <label><input type="radio" name="gender" value="female">Female</label>
+                </div>
+                <div class="error" id="genderErr"></div>
+            </div>
+            <div class="row">
+        <label>Hobbies <i>(Optional)</i></label>
+        <div class="form-inline">
+            <label><input type="checkbox" name="hobbies[]" value="sports"> Sports</label>
+            <label><input type="checkbox" name="hobbies[]" value="movies"> Movies</label>
+            <label><input type="checkbox" name="hobbies[]" value="music"> Music</label>
+        </div>
+    </div>
+    <div class="row">
+        <input type="submit" value="Submit">
+    </div>
+</form>

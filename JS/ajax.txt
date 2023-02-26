@@ -1,0 +1,25 @@
+XMLHTTPREQUEST METHODS
+
+abort() : cancels the current request
+getAllResponseHeader() : Return the complete set of HTTP header as string
+getResponseHeader(headerName) : Return the value of the specific HTTP header.
+open(method, URL)
+open(method, URL, async)
+open(method, URL, async, userName)
+open(method, URL, async, userName, password)
+
+		specifies the method, URL and other optional attribute of request
+		method: POST, GET, HEAD, or PUT and DELETE
+		URL:
+		async: true/flase
+send(content): send the request
+setRequestHeader(label, value): adds a label/value pair to the HTTP header to be sent
+
+XMLHTTPREQUEST PROPERTIES
+
+onreadystatechange: An event header for the evenet that fires at every state change
+readyState: 
+responseText:
+responseXML:
+status
+statusText

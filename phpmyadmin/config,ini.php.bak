@@ -1,0 +1,45 @@
+<?php
+$servername ='localhost';
+$username='root';
+$password=''; 
+$dbname='db_name';
+$conn = mysql_connect($servername, $username, $password,"$dbname");
+
+if(!$conn){
+	die('Could not connect MySql:' .mysql_error());
+
+
+
+
+
+ 
+/* Servers configuration */
+$i = 0;
+ 
+/* Server: localhost [1] */
+$i++;
+$cfg['Servers'][$i]['verbose'] = '';
+$cfg['Servers'][$i]['host'] = 'localhost';
+$cfg['Servers'][$i]['port'] = '';
+$cfg['Servers'][$i]['socket'] = '';
+$cfg['Servers'][$i]['connect_type'] = 'tcp';
+$cfg['Servers'][$i]['auth_type'] = 'cookie';
+$cfg['Servers'][$i]['user'] = 'root';
+$cfg['Servers'][$i]['password'] = 'P07ycom!23';
+$cfg['Servers'][$i]['nopassword'] = TRUE;
+$cfg['Servers'][$i]['AllowNoPassword'] = TRUE;
+ 
+$cfg['Servers'][$i]['extension']     = 'mysqli';
+ 
+/* End of servers configuration */
+
+$cfg['Servers'][$i]['pmadb'] = 'phpmyadmin';
+$cfg['Servers'][$i]['controluser'] = 'phpmyadmin';
+ 
+$cfg['blowfish_secret'] = 'HACKWARE.RU ==== WRITE DOWN WHAT YOU WANT HERE';
+$cfg['DefaultLang'] = 'en';
+$cfg['ServerDefault'] = 1;
+$cfg['UploadDir'] = '';
+$cfg['SaveDir'] = '';
+ 
+?>

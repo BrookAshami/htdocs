@@ -1,0 +1,47 @@
+/*
+Theme Name: Brook New Theme
+Author: Brook
+Author URI: http://localhost/
+Descriotion: Brook custom theme
+version: 1.0
+tested upto: 5.6
+*/
+
+body {
+    text-align: center;
+}
+
+#wrapper {
+    display: block;
+    border: 1px #000 solid;
+    
+    margin:0px auto;	
+}
+#header {
+    border: 1px #000 solid;
+}
+#nav{
+	text-align:center;
+}
+#content {
+    width: 74%;
+    border: 1px #000 solid;
+    float: left;	
+}
+
+#sidebar {
+	width: 24%;
+	border: 1px #bbb solid;
+	float: right;	
+ }
+
+#footer {
+	clear: both;
+    border: 1px #000 solid;
+}
+
+.title {
+    font-size: 11pt;
+    font-family: arial;
+    font-weight: bold;
+}

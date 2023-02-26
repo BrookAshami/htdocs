@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <script src="JQuary/jquery.js"> </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            img{
+                width :50%;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+    <!-- 
+        <p id="demo"></p>
+        <script>
+            const x = function(a, b){ return a*b};
+            document.getElementById("demo").innerHTML = x(50, 20);
+        </script>
+        <script>
+            function myFunction(a, b){
+                return a * b;
+            }
+            document.getElementById("demo").innerHTML = myFunction(20, 4);              
+        </script>
+        <p id="b1"></p>
+      
+        <script>
+            x = window.open();
+            y = window.close();
+            z = window.moveTo();
+            l = window.resizeTo();
+            document.getElementById("b1").innerHTML = l;
+
+        </script>
+    
+         <img src="img/IMG_2403.jpg" width="460" height="345">
+    -->
+        <form enctype="multipart/form-data"
+            action="<?php print $_SERVER['PHP_SELF']?>" method="post">
+            <p>
+            <input type="hidden" name="MAX_FILE_SIZE" value="102400" />
+            <input type="file" name="fupload" /><br/>
+            <input type="submit" value="upload!" />
+            </p>
+        </form>
+    </body>
+</html>

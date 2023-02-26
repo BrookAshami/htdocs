@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="JQuary/jquery.js"> </script>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <style>
+            p{
+                padding: 15px;
+                background: #F0E68C;
+            }
+        </style>
+        <!--
+            <script>
+                $(document).ready(function() {
+                    $("button").click(function(){
+                        $("p").text("Brook Ashami!")
+                    });
+                        $("h1").css("color", "#0088ff");
+                        $(".mark").css("background", "yellow");                  
+
+                });
+            </script>
+        -->
+        <script>
+            $(document).ready(function() {            
+                $(".toggle-btn)").click(function(){
+                    $("p.normal").toggle();
+                    $("p.fast").toggle("fast");
+                    $("p.slow").toggle("slow");
+                    $("p.very-fast").toggle(50);
+                    $("p.very-slow").toggle(2000);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <!-- 
+        <body class="mark">
+        <p> Not loaded yet.</p>
+        <button type="button"> Replace Text</button>
+        <h1> Hellow World!</h1>
+        -->
+        <button type="button" class="toggle-btn">Toggle Paragraphs</button>
+        <p class="very-fast">This paragraph will show/hide with very fast speed.</p>
+        <p class="normal">This paragraph will show/hide with default speed.</p>
+        <p class="fast">This paragraph will show/hide with fast speed.</p>
+        <p class="slow">This paragraph will show/hide with slow speed.</p>
+        <p class="very-slow">This paragraph will show/hide with very slow speed.</p>
+    </body>
+
+</html>

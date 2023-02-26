@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> JavaScript Ajax Post Demo</title>
+        
+        <script type="text/javascript" src="../JS/ajaxFile.js"></script>        
+    </head>
+    <body>
+        <form id="myForm">
+            <label>Fist Name:</label>
+            <div><input type="text" name="firstName"></div> <br>
+            <label>Last Name:</label>
+            <div><input type="text" name="lastName"></div> <br>
+            <label>User Name:</label>
+            <div><input type="text" name="userName"></div> <br>
+            <label>password:</label>
+            <div><input type="text" name="password"></div> <br>
+            <label>Confirm Password:</label>
+            <div><input type="text" name="confirmPassword"></div> <br>
+            <label>Email:</label>
+            <div><input type="text" name="email"></div> <br>
+            <label>Address:</label>
+            <div><input type="text" name="address"></div> <br>
+            <label>Comment:</label>
+            <div><textarea name="comment"></textarea></div>
+            <p><button type="button" onclick="postComment()">Post Comment</button> </p>
+        </form>
+        <div id="result">
+            <p>Content of the result DIV box will be replace by the server response</p>
+        </div>
+    </body>
+</html>

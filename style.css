@@ -1,0 +1,61 @@
+
+body {
+    text-align: left;
+}
+
+#wrapper{
+	display: block;
+    border: 1px #000 solid;
+    width:100%;
+    margin:1px auto;
+	height: auto; 
+}
+#header {
+	height: auto;
+    border: 1px #000 solid;
+	background-color: pink; 
+}
+#nav{
+	text-align:center;
+}
+#main{
+	width: 100%;
+	height:auto;
+}
+#content{
+	float: right;
+	width: 70%;
+	border-width: 5px 20px;
+    height: autox;
+	background-color:lightblue;
+}
+#sidebar{
+	float: left;
+	width: 29%;
+	border-width:5px 20px;
+	height: auto;
+	background-color:orange;
+ }
+ #sidebar label{
+	display: block;
+	padding-left: 15px;
+	text-align: -15px;
+	float: left;
+ }
+#sidebar input{
+	float: right;
+	width: 180px;
+	height: 17px;
+	padding: 0;
+	margin: 0;
+	vertical-align: bottom;
+	position: relative;
+	overflow: hidden;
+}
+
+#footer{
+	clear: both;
+	width:100%;
+	height:auto;
+	background-color:yellow;
+}
